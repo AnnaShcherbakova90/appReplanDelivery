@@ -1,6 +1,6 @@
 package ru.netology.delivery.data;
 
-import com.github.javaFaker.Faker;
+import com.github.javafaker.Faker;
 import lombok.Value;
 
 import java.time.LocalDate;
@@ -37,8 +37,8 @@ public class DataGenerator {
 
 
     public static String generateName(String locale) {
-        var faker = new Faker(new Locale(locale));
-        return faker.name().lastName() + " " + faker.name().firstName();
+        var Faker = new Faker(new Locale(locale));
+        return Faker.name().lastName() + " " + Faker.name().firstName();
     }
     // TODO: добавить логику для объявления переменной name и задания её значения, для генерации можно
     // использовать Faker
